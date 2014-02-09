@@ -8,9 +8,9 @@ Gem::Specification.new do |spec|
   spec.version       = FiddleFart::VERSION
   spec.authors       = ["Eric Berry"]
   spec.email         = ["cavneb@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
-  spec.homepage      = ""
+  spec.summary       = "Parse embed data from jsfiddle, jsbin, codepen and plnkr"
+  spec.description   = %q{FiddleFart is the parsing tool which takes a URL from any of the following services and normalizes the embed data.}
+  spec.homepage      = "https://github.com/cavneb/fiddle_fart"
   spec.license       = "MIT"
 
   spec.files         = `git ls-files -z`.split("\x0")

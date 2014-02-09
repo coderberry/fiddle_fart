@@ -9,7 +9,7 @@ following services and normalizes the embed data.
 * [plnkr.co](http://plnkr.co)
 
 The goal of this gem is to make it very easy to extract out embed
-URLs.
+URLs (for use in other *future* applications).
 
 ## Installation
 
@@ -28,10 +28,24 @@ Or install it yourself as:
 ## Usage
 
 ```ruby
-obj = FiddleFart::Parser.parse(url)
-embed_url = obj.embed_url
-# => blah
+require 'fiddle_fart'
 
+url = "http://jsbin.com/eyOlOFI/7/edit"
+obj = FiddleFart::Parser.parse(url)
+obj.embed_url # => "http://jsbin.com/eyOlOFI/7/embed"
+
+url = "http://codepen.io/cmykw/pen/krqIt"
+obj = FiddleFart::Parser.parse(url)
+obj.share_link # => "http://codepen.io/cmykw/full/krqIt"
+
+url = "http://jsfiddle.net/cavneb/sKfS8/"
+obj = FiddleFart::Parser.parse(url)
+obj.embed_url # => "http://jsfiddle.net/cavneb/sKfS8//embedded/result/"
+
+url = "http://plnkr.co/edit/ZTArBF?p=info"
+obj = FiddleFart::Parser.parse(url)
+obj.embed_url # => "http://embed.plnkr.co/ZTArBF/preview"
+```
 
 ## Contributing
 
