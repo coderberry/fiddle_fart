@@ -1,5 +1,9 @@
 # FiddleFart
 
+[![Build Status](https://travis-ci.org/instructure/lti_public_resources.png)](https://travis-ci.org/instructure/lti_public_resources)
+[![Gem Version](https://badge.fury.io/rb/fiddle_fart.png)](http://badge.fury.io/rb/fiddle_fart)
+[![Code Climate](https://codeclimate.com/github/cavneb/fiddle_fart.png)](https://codeclimate.com/github/cavneb/fiddle_fart)
+
 FiddleFart is the parsing tool which takes a URL from any of the
 following services and normalizes the embed data.
 
