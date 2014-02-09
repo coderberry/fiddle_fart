@@ -1,6 +1,15 @@
 # FiddleFart
 
-TODO: Write a gem description
+FiddleFart is the parsing tool which takes a URL from any of the
+following services and normalizes the embed data.
+
+* [jsfiddle.net](http://jsfiddle.net)
+* [jsbin.com](http://jsbin.com)
+* [codepen.io](http://codepen.io)
+* [plnkr.co](http://plnkr.co)
+
+The goal of this gem is to make it very easy to extract out embed
+URLs.
 
 ## Installation
 
@@ -18,7 +27,11 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+```ruby
+obj = FiddleFart::Parser.parse(url)
+embed_url = obj.embed_url
+# => blah
+
 
 ## Contributing
 
